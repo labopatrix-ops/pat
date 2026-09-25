@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("image/ESYOK.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("image/back.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(0, 150, 255, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+
+.card h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: contain;
+    border: 3px solid #0096ff;
+    background: white;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    font-size: 13px;
+    color: #aaa;
+}
+
+.contact-item strong {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    color: #0096ff;
+    text-decoration: none;
+}
